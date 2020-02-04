@@ -134,6 +134,7 @@ table {
 }
 * {
   box-sizing: border-box;
+  border: 1px solid black;
 }
 html {
   font-size: 62.5%;
@@ -162,58 +163,64 @@ p {
   line-height: 1.4;
 }
 .container {
+  /*
   max-width: 800px;
+  */
   width: 100%;
   margin: 0 auto;
 }
-.home .intro {
+div {
+  border: 1px solid black;
+}
+.team-member {
+  width: 50%;
+  margin: 1%;
+  padding: 1%;
+}
+.header-image {
+  width: 100%;
+  max-width: 100%;
+  height: 85vh;
+}
+.top {
+  margin: 1%;
+  padding: 1%;
+}
+.middle {
+  margin: 1%;
+  padding: 1%;
+}
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+}
+.home .listing-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+.home .listing-images img {
+  border: 1px solid black;
   max-width: 100%;
-}
-.home .intro h2 {
-  padding: 15px;
-}
-.home .intro p {
-  padding: 0 15px;
-}
-.home .main-header {
-  max-width: 100%;
-  width: 100%;
-}
-.home .space-images {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
 }
 @media (max-width: 500px) {
-  .home .space-images img {
+  .home .listing-images img {
     width: 100%;
   }
 }
 @media (max-width: 500px) {
-  .home .space-images .sky,
-  .home .space-images .launch {
+  .home .listing-images .sky,
+  .home .listing-images .launch {
     display: none;
   }
 }
-.home .visit-planets {
-  padding: 15px;
-}
-.home .visit-planets h3 {
-  margin-top: 11px;
-}
-.home .visit-planets p {
-  margin-top: 13px;
-}
-.home .walk {
+.home .bottom {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
@@ -221,28 +228,28 @@ p {
   justify-content: center;
 }
 @media (max-width: 500px) {
-  .home .walk {
+  .home .bottom {
     margin-top: 1%;
     flex-direction: column-reverse;
     padding: 15px;
   }
 }
-.home .walk .walk-text {
+.home .bottom .walk-text {
   width: 50%;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text {
+  .home .bottom .walk-text {
     width: 100%;
     margin: 3% 0 1% 0;
   }
 }
-.home .walk .walk-text h3 {
+.home .bottom .walk-text h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
+.home .bottom .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+.home .bottom .walk-text .btn {
   background: #282828;
   color: white;
   text-align: center;
@@ -262,48 +269,62 @@ p {
   }
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text .btn {
+  .home .bottom .walk-text .btn {
     width: 100%;
     padding: 4% 0;
   }
 }
-.home .walk .walk-text .btn:hover {
+.home .bottom .walk-text .btn:hover {
   background: darkblue;
   color: red;
 }
-.home .walk .walk-img {
+.home .bottom .walk-img {
   width: 46%;
   margin-left: 4%;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-img {
+  .home .bottom .walk-img {
     width: 100%;
     margin: 0;
   }
 }
-.home .walk .walk-img img {
+.home .bottom .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
+.bottom-image {
+  width: 50%;
+  max-width: 50%;
+}
+bottom-img {
+  width: 50%;
+  max-width: 100%;
+}
 nav {
+  width: 100%;
+  border: 1px solid black;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  background-color: #E8E8E8;
-  max-width: 950px;
-  width: 100%;
-  margin: 0 auto;
-  animation-name: headerAnim;
-  animation-duration: 10s;
-}
-@keyframes headerAnim {
-  from {
-    background-color: #000000;
-  }
-  to {
-    background-color: #E8E8E8;
-  }
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  color: #48D1CC;
+  /*
+
+    // Inserting simple animation here
+
+    @keyframes headerAnim {
+    from {background-color: #000000;}
+    to {background-color: #E8E8E8;}
+    }
+
+    animation-name: headerAnim;
+    animation-duration: 10s;
+    
+    // Ending animation
+
+    */
 }
 @media (max-width: 500px) {
   nav {
@@ -311,19 +332,24 @@ nav {
   }
 }
 nav h1 {
-  width: 100%;
+  background-color: lightblue;
+  color: white;
+  width: 50%;
   text-align: center;
   font-size: 3.8rem;
   margin: 1% auto;
 }
 nav a {
+  background-color: lightblue;
+  color: white;
   font-family: 'Russo One', sans-serif;
   font-size: 1.6rem;
   margin: 2%;
+  padding: 1%;
 }
 footer {
   color: #22283B;
-  background: #f4f4f4;
+  background: #D3D3D3;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
