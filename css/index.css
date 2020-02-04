@@ -172,11 +172,6 @@ p {
 div {
   border: 1px solid black;
 }
-.team-member {
-  width: 50%;
-  margin: 1%;
-  padding: 1%;
-}
 .header-image {
   width: 100%;
   max-width: 100%;
@@ -300,6 +295,18 @@ div {
 bottom-img {
   width: 50%;
   max-width: 100%;
+}
+.team-box {
+  border: 0.5px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 1% auto;
+}
+.team-member {
+  width: 60%;
+  margin: 3%;
+  padding: 3%;
 }
 nav {
   width: 100%;
