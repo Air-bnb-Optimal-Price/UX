@@ -1,0 +1,40 @@
+// Navigation code here
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #E8E8E8;
+    max-width: 950px;
+    width:100%;
+    margin:0 auto;
+
+    
+    // Inserting simple animation here
+
+    @keyframes headerAnim {
+    from {background-color: #000000;}
+    to {background-color: #E8E8E8;}
+    }
+
+    animation-name: headerAnim;
+    animation-duration: 10s;
+    
+    // Ending animation
+
+    @media @phone{
+        .cell();
+    }
+
+    h1{
+        width:100%;
+        text-align: center;
+        font-size:3.8rem;
+        margin:1% auto;
+    }
+    a{
+        font-family: 'Russo One', sans-serif;
+        font-size: 1.6rem;
+        margin:2%;
+    }
+}
