@@ -129,6 +129,10 @@
   }
 }// home
 
+.bottom{
+  justify-content: center;
+}
+
 .bottom-image{
   width: 50%;
   max-width: 50%;
@@ -185,4 +189,58 @@ bottom-img{
 
 .team-image{
   max-width: 100%;
+}
+
+.content-box{
+  background-color: @bgcolor;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .text{
+    width: 40%;
+    margin: 1%;
+    padding: 1%;
+    background-color: white;
+  }
+
+  .image{
+    margin: 1%;
+    padding: 1%;
+    width: 50%;
+    max-width: 100%;
+  
+      img{
+        max-width: 100%;
+         }
+   }
+}
+
+.image-box{
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  img{
+    background-color: white;
+    width: 30%;
+    border: 0.1px solid black;
+    margin: 1%;
+    padding: 1%;
+    max-width: 100%;
+    }
+}
+
+
+
+.container {
+  /*
+  max-width: 800px;
+  */
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;  
 }
