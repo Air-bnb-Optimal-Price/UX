@@ -384,10 +384,26 @@ nav a {
 footer {
   color: white;
   background: lightblue;
-  padding: 2%;
+  padding: 1%;
   border: 1px double #e0e0e0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+footer a {
+  width: 20%;
+  background: white;
+  color: lightblue;
+  border: 0.5px dotted blue;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.6rem;
+  margin: 1%;
+  padding: 1%;
+}
+footer P {
+  width: 100%;
+  text-align: center;
 }
