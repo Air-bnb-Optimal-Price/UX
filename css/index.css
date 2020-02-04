@@ -244,35 +244,6 @@ div {
 .home .bottom .walk-text p {
   margin-bottom: 26px;
 }
-.home .bottom .walk-text .btn {
-  background: #282828;
-  color: white;
-  text-align: center;
-  border-radius: 5px;
-  font-size: 1.6rem;
-  padding: 4%;
-  width: 50%;
-  animation-name: buttonAnimation;
-  animation-duration: 10s;
-}
-@keyframes buttonAnimation {
-  from {
-    background-color: white;
-  }
-  to {
-    background-color: #282828;
-  }
-}
-@media (max-width: 500px) {
-  .home .bottom .walk-text .btn {
-    width: 100%;
-    padding: 4% 0;
-  }
-}
-.home .bottom .walk-text .btn:hover {
-  background: darkblue;
-  color: red;
-}
 .home .bottom .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -358,6 +329,35 @@ bottom-img {
 }
 .content-box .image img {
   max-width: 100%;
+}
+.content-box .btn {
+  background: #282828;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  padding: 4%;
+  width: 50%;
+  animation-name: buttonAnimation;
+  animation-duration: 10s;
+}
+@keyframes buttonAnimation {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #282828;
+  }
+}
+@media (max-width: 500px) {
+  .content-box .btn {
+    width: 100%;
+    padding: 4% 0;
+  }
+}
+.content-box .btn:hover {
+  background: darkblue;
+  color: red;
 }
 .image-box {
   display: flex;
