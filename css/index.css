@@ -273,12 +273,12 @@ bottom-img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: initial;
   width: 90%;
   margin: 1% auto;
 }
 .team-intro {
-  width: 90%;
+  width: 100%;
   margin: 1%;
   padding: 2%;
   text-align: center;
@@ -287,7 +287,7 @@ bottom-img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 30%;
+  width: 33%;
   margin: 1%;
   padding: 1%;
 }
@@ -303,25 +303,26 @@ bottom-img {
   max-width: 100%;
 }
 .content-box {
+  width: 90%;
+  margin: 1%;
   background-color: white;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-}
-.content-box .text {
-  width: 40%;
-  margin: 1%;
-  padding: 1%;
-  background-color: white;
+  justify-content: center;
 }
 .content-box .image {
-  margin: 1%;
-  padding: 1%;
   width: 50%;
+  margin: 1%;
   max-width: 100%;
 }
 .content-box .image img {
   max-width: 100%;
+}
+.content-box .text {
+  width: 45%;
+  margin: 1%;
+  padding: 1%;
+  background-color: white;
 }
 .content-box .btn {
   background: #282828;
@@ -406,12 +407,21 @@ bottom-img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
   padding: 1%;
 }
 .image-container img {
-  width: 30%;
+  width: 33%;
   max-width: 100%;
   object-fit: contain;
+}
+.parent-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid blue;
 }
 nav {
   width: 100%;
