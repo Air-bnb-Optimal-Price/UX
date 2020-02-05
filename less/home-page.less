@@ -16,8 +16,6 @@
   padding: 1%;
 }
 
-
-
 .home {
   display: flex;
   flex-wrap: wrap;
@@ -185,7 +183,6 @@ bottom-img{
          }
    }
 
-
    .btn{
     .newButton(#282828, white);
     text-align: center;
@@ -215,23 +212,7 @@ bottom-img{
       background: darkblue;
       color: red;
     }
-}
-}
-
-.image-box{
-  
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-
-  img{
-    background-color: white;
-    width: 30%;
-    border: 0.1px solid black;
-    margin: 1%;
-    padding: 1%;
-    max-width: 100%;
-    }
+  }
 }
 
 .container {
@@ -248,5 +229,61 @@ bottom-img{
   width: 90%;
   margin: 1%;
   padding: 1%;
-  
+
+}
+
+.main-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 1% auto;
+
+  .main-text{
+    width: 65%;
+
+    h2, h3{
+      margin:1%;
+    }
+
+    p{
+      margin: 1%;
+      font-size: 2.2rem;
+      line-height: 1.4;
+    }
+  }
+
+  .banner-image{
+    width: 30%;
+    max-width:100%;
+    
+    img{
+      max-width:100%;
+    }
+  }
+
+  .main-image{
+    width: 30%;
+    max-width: 100%;
+
+    img{
+      max-width:100%;
+    }
+  }
+}
+
+
+.image-box{
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  .box{
+    max-width: 100%;
+    background-color: white;
+    width: 30%;
+    border: 0.1px solid black;
+    margin: 1%;
+    padding: 1%;
+    }
 }

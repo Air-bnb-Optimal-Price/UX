@@ -352,19 +352,6 @@ bottom-img {
   background: darkblue;
   color: red;
 }
-.image-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.image-box img {
-  background-color: white;
-  width: 30%;
-  border: 0.1px solid black;
-  margin: 1%;
-  padding: 1%;
-  max-width: 100%;
-}
 .container {
   /*
   max-width: 800px;
@@ -376,6 +363,52 @@ bottom-img {
 }
 .text-box {
   width: 90%;
+  margin: 1%;
+  padding: 1%;
+}
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 1% auto;
+}
+.main-container .main-text {
+  width: 65%;
+}
+.main-container .main-text h2,
+.main-container .main-text h3 {
+  margin: 1%;
+}
+.main-container .main-text p {
+  margin: 1%;
+  font-size: 2.2rem;
+  line-height: 1.4;
+}
+.main-container .banner-image {
+  width: 30%;
+  max-width: 100%;
+}
+.main-container .banner-image img {
+  max-width: 100%;
+}
+.main-container .main-image {
+  width: 30%;
+  max-width: 100%;
+}
+.main-container .main-image img {
+  max-width: 100%;
+}
+.image-box {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.image-box .box {
+  max-width: 100%;
+  background-color: white;
+  width: 30%;
+  border: 0.1px solid black;
   margin: 1%;
   padding: 1%;
 }
