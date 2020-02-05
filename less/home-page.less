@@ -237,6 +237,7 @@ bottom-img{
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 1% auto;
+  padding: 2% 1%;
 
   .main-text{
     width: 65%;
@@ -272,18 +273,18 @@ bottom-img{
 }
 
 
-.image-box{
+.image-container{
+  width: 100%;
   max-width: 100%;
+  max-height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding: 1%;
 
-  .box{
-    max-width: 100%;
-    background-color: white;
+  img{
     width: 30%;
-    border: 0.1px solid black;
-    margin: 1%;
-    padding: 1%;
-    }
+    max-width: 100%;
+    object-fit: contain;
+  }
 }
