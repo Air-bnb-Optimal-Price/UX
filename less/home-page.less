@@ -189,7 +189,8 @@ bottom-img{
     border-radius: 5px;
     font-size: 1.6rem;
     padding:4%;
-    width:50%;
+    width:100%;
+    border: 1px solid black;
 
     // Inserting simple animation here
 
@@ -289,11 +290,83 @@ bottom-img{
   }
 }
 
+
+.grandparent-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding:1%;  
+  background-color: white;
+}
+
 .parent-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  padding:2%;
   border: 1px solid blue;  
+  border-radius: 15px;
+  background-color: @bgcolor;
+}
+
+.child-text{
+  width: 65%;
+  margin: 1%;
+  background-color: white;
+  border-radius: 15px;
+
+  h2, h3{
+    margin:1%;
+  }
+
+  p{
+    margin: 1%;
+    font-size: 2.2rem;
+    line-height: 1.4;
+  }
+}
+
+.child-image{
+  width: 30%;
+  margin: 1%;
+  max-width:100%;
+  border-radius: 15px;;
+  
+  img{
+    border-radius: 15px;
+    max-width:100%;
+  }
+}
+
+.button{
+  .newButton(darkslateblue, lightblue);
+  text-align: center;
+  border-radius: 15px;
+  font-size: 3.6rem;
+  padding:4%;
+  width:100%;
+  margin: 1%;
+  border: 1px solid black;
+
+  // Inserting simple animation here
+  @keyframes buttonAnimation {
+    from {background-color: @bgcolor;}
+    to {background-color: white;}
+  }
+
+  animation-name: buttonAnimation;
+  animation-duration: 10s;
+  // Ending animation
+
+  @media @phone{
+    .cell();
+    padding:4% 0;
+  }
+
+  &:hover{
+    background: darkblue;
+    color: red;
+  }
 }

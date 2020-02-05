@@ -305,7 +305,7 @@ bottom-img {
 .content-box {
   width: 90%;
   margin: 1%;
-  background-color: white;
+  background-color: lightslategray;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -331,7 +331,8 @@ bottom-img {
   border-radius: 5px;
   font-size: 1.6rem;
   padding: 4%;
-  width: 50%;
+  width: 100%;
+  border: 1px solid black;
   animation-name: buttonAnimation;
   animation-duration: 10s;
 }
@@ -415,13 +416,79 @@ bottom-img {
   max-width: 100%;
   object-fit: contain;
 }
+.grandparent-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 1%;
+  background-color: white;
+}
 .parent-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  padding: 2%;
   border: 1px solid blue;
+  border-radius: 15px;
+  background-color: lightslategray;
+}
+.child-text {
+  width: 65%;
+  margin: 1%;
+  background-color: white;
+  border-radius: 15px;
+}
+.child-text h2,
+.child-text h3 {
+  margin: 1%;
+}
+.child-text p {
+  margin: 1%;
+  font-size: 2.2rem;
+  line-height: 1.4;
+}
+.child-image {
+  width: 30%;
+  margin: 1%;
+  max-width: 100%;
+  border-radius: 15px;
+}
+.child-image img {
+  border-radius: 15px;
+  max-width: 100%;
+}
+.button {
+  background: darkslateblue;
+  color: lightblue;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 3.6rem;
+  padding: 4%;
+  width: 100%;
+  margin: 1%;
+  border: 1px solid black;
+  animation-name: buttonAnimation;
+  animation-duration: 10s;
+}
+@keyframes buttonAnimation {
+  from {
+    background-color: lightslategray;
+  }
+  to {
+    background-color: white;
+  }
+}
+@media (max-width: 500px) {
+  .button {
+    width: 100%;
+    padding: 4% 0;
+  }
+}
+.button:hover {
+  background: darkblue;
+  color: red;
 }
 nav {
   width: 100%;
@@ -471,8 +538,8 @@ nav a {
   padding: 1.5%;
 }
 footer {
-  color: lightblue;
-  background: white;
+  color: lightslategray;
+  background: lightslategray;
   padding: 1%;
   border: 1px double #e0e0e0;
   display: flex;
@@ -482,8 +549,8 @@ footer {
 }
 footer a {
   width: 20%;
-  background: lightblue;
-  color: white;
+  background: oldlace;
+  color: lightslategray;
   border: 0.5px dotted blue;
   border-radius: 10px;
   text-align: center;
