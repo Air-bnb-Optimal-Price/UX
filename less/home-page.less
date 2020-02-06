@@ -122,6 +122,10 @@ bottom-img{
   align-items: initial;
   width: 90%;
   margin:1% auto;
+
+  @media @phone{
+    border-radius: 15px;
+  }
 }
 
 .team-intro{
@@ -141,6 +145,10 @@ bottom-img{
   width: 40%;
   margin: 2%;
   padding: 3%;
+
+  @media @phone{
+    .cell();
+  }
 
   img{
     border: 0.5px dotted lightblue;
@@ -193,16 +201,33 @@ bottom-img{
   border-radius: 15px;
   margin:1%;
   background-color: @grandparentbg;
+  
+  @media @phone{
+    flex-direction: column;
+    justify-content: center;
+  }
+  
   .image{
     width: 50%;
     margin: 1%;
     max-width: 100%;
     border-radius: 10px;
       
+    @media @phone{
+      .cell();
+    }
+
     img{
+        
         max-width: 100%;
         border-radius: 10px;
-         }
+        
+        @media @phone{
+          .cell();
+        }
+
+      
+      }
    }
 
   .text{
@@ -211,6 +236,10 @@ bottom-img{
     padding: 1%;
     background-color:@grandparentbg;
 
+    @media @phone{
+      .cell();
+    }
+
     p{
       margin-top: 2%;
     }
@@ -218,7 +247,7 @@ bottom-img{
   }
 
    .btn{
-    .newButton(#282828, @parentbg);
+    .newButton(@grandparentbg, @parentbg);
     text-align: center;
     border-radius: 5px;
     font-size: 1.6rem;
@@ -344,8 +373,6 @@ bottom-img{
   }
 }
 
-
-
 .parent-container{
   display: flex;
   flex-wrap: wrap;
@@ -368,7 +395,7 @@ bottom-img{
 }
 
 .child-text{
-  width: 65%;
+  width: 50%;
   margin: 1%;
   background-color: white;
   border-radius: 15px;
@@ -390,7 +417,7 @@ bottom-img{
 }
 
 .child-image{
-  width: 30%;
+  width: 45%;
   margin: 1%;
   max-width:100%;
   border-radius: 15px;;
