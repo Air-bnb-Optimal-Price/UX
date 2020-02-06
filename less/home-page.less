@@ -126,6 +126,10 @@ bottom-img{
   @media @phone{
     border-radius: 15px;
   }
+
+  @media @tablet{
+    border-radius: 10px;
+  }
 }
 
 .team-intro{
@@ -142,11 +146,11 @@ bottom-img{
   border: 5px solid @parentbg;
   border-radius: 20px;
   justify-content: space-between;
-  width: 40%;
+  width: 45%;
   margin: 2%;
   padding: 3%;
 
-  @media @phone{
+  @media @phone, @tablet{
     .cell();
   }
 
@@ -168,6 +172,14 @@ bottom-img{
     color: black;
     font-family: 'Russo One', sans-serif;
     margin: 1%;
+    max-width: 100%;
+
+    a{
+      max-width: 100%;
+      border: 1px solid black;
+      overflow-wrap: break-word;
+    }
+
   }
   
     h1, h2, h3, h4, h5 {
@@ -397,7 +409,7 @@ bottom-img{
 .child-text{
   width: 50%;
   margin: 1%;
-  background-color: white;
+  background-color: @grandparentbg;
   border-radius: 15px;
 
   @media @phone{
@@ -424,6 +436,7 @@ bottom-img{
   
   @media @phone{
     .cell();
+    padding: 1%;
   }
 
   img{
@@ -433,7 +446,7 @@ bottom-img{
 }
 
 .button{
-  .newButton(@grandparentbg, lightblue);
+  .newButton(@grandparentbg, @parentbg);
   text-align: center;
   border-radius: 15px;
   font-size: 4rem;

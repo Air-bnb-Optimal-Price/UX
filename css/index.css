@@ -286,6 +286,11 @@ bottom-img {
     border-radius: 15px;
   }
 }
+@media (max-width: 800px) {
+  .team-box {
+    border-radius: 10px;
+  }
+}
 .team-intro {
   width: 100%;
   margin-top: 1%;
@@ -298,11 +303,11 @@ bottom-img {
   border: 5px solid lightslategray;
   border-radius: 20px;
   justify-content: space-between;
-  width: 40%;
+  width: 45%;
   margin: 2%;
   padding: 3%;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .team-member {
     width: 100%;
   }
@@ -323,6 +328,12 @@ bottom-img {
   color: black;
   font-family: 'Russo One', sans-serif;
   margin: 1%;
+  max-width: 100%;
+}
+.team-member p a {
+  max-width: 100%;
+  border: 1px solid black;
+  overflow-wrap: break-word;
 }
 .team-member h1,
 .team-member h2,
@@ -527,7 +538,7 @@ bottom-img {
 .child-text {
   width: 50%;
   margin: 1%;
-  background-color: white;
+  background-color: oldlace;
   border-radius: 15px;
 }
 @media (max-width: 500px) {
@@ -555,6 +566,7 @@ bottom-img {
 @media (max-width: 500px) {
   .child-image {
     width: 100%;
+    padding: 1%;
   }
 }
 .child-image img {
@@ -563,7 +575,7 @@ bottom-img {
 }
 .button {
   background: oldlace;
-  color: lightblue;
+  color: lightslategray;
   text-align: center;
   border-radius: 15px;
   font-size: 4rem;
@@ -673,22 +685,29 @@ header .header-image {
   height: 70vh;
 }
 footer {
-  color: lightslategray;
-  background: lightslategray;
-  padding: 1%;
-  border: 1px double #e0e0e0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: lightslategray;
   border-top: 0.5px dashed darkblue;
+}
+.footer-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  border-top: 0.5px dashed darkblue;
+  width: 80%;
+  color: lightslategray;
+  background: lightslategray;
+  padding-top: 1%;
 }
 @media (max-width: 500px) {
-  footer {
+  .footer-container {
     flex-direction: column;
   }
 }
-footer a {
+.footer-container a {
   width: 20%;
   background: oldlace;
   color: lightslategray;
@@ -698,15 +717,15 @@ footer a {
   font-family: 'Russo One', sans-serif;
   font-size: 1.6rem;
   margin: 1%;
-  padding: 1%;
+  padding: 2%;
 }
 @media (max-width: 500px) {
-  footer a {
+  .footer-container a {
     width: 96%;
     margin: 1%;
   }
 }
-footer P {
+.footer-container P {
   width: 100%;
   background: lightslategray;
   color: oldlace;

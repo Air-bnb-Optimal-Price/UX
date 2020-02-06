@@ -1,14 +1,25 @@
 // Footer Styles
+
 footer {
-  color: @textcolor;
-  background: @bgcolor;
-  padding: 1%;
-  border: 1px double #e0e0e0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  background-color: @parentbg;
   border-top: 0.5px dashed darkblue;
+}
+
+.footer-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  border-top: 0.5px dashed darkblue;
+  width: @parentwidth;
+  color: @textcolor;
+  background: @bgcolor;
+  padding-top: 1%;
 
   @media @phone{
     flex-direction: column;
@@ -24,12 +35,11 @@ footer {
     font-family: 'Russo One', sans-serif;
     font-size: 1.6rem;
     margin:1%;
-    padding:1%;
+    padding:2%;
 
     @media @phone{
       .nav.cell();
     }
-
   }
  
   P{
