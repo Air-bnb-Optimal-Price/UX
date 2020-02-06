@@ -417,60 +417,68 @@ bottom-img{
   a{
     width: 100%;
   }
-
 }
 
 .child-main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   margin: 1%;
   padding: 1%;
   background-color: @grandparentbg;
-  color: black;
   border-radius: 15px;
 
-  .image-container{
-      width: 100%;
-      background-color: @parentbg;
-      max-width: 100%;
-      margin: 1%;
-      padding: 1%;
-      background-color: @grandparentbg;
-      border-radius: 5%;
-          
-      @media @phone{
-        .cell();
-      }
-
-      img{
-        text-align: center;
-        max-width: 100%;
-        border-radius: 100%;
-      
-        @media @phone{
-          width: 80%;
-        }
-      }
+  h1{
+    font-size: 3.6rem;
   }
 
-  @media @phone{
-    .child-cell();
-  }
-
-  h2, h3{
+  h1, h2, h3{
     margin:1%;
     text-align: center;
   }
 
   p{
-    margin: 1%;
+    margin: 3%;
     font-size: 2.2rem;
-    line-height: 1.6;
+    font-family: 'Ubuntu','Russo One', sans-serif;
+    line-height: 1.4;
   }
-}
+
+  .image-container{
+      width: 80%;
+      max-width: 100%;
+      background-color: @parentbg;
+      margin: 1%;
+      padding: 1%;
+      background-color: @grandparentbg;
+      border-radius: 5%;
+          
+        @media @phone{
+          .cell();
+        }
+
+        img{
+          width: 100%;
+          text-align: center;
+          max-width: 100%;
+          border-radius: 15px;
+        
+          @media @phone{
+            width: 80%;
+          }
+        }
+      }
+
+    @media @phone{
+      .child-cell();
+    }
+  }
 
 .child-text{
   width: 50%;
   margin: 1%;
+  padding: 2%;
   background-color: @grandparentbg;
   border-radius: 15px;
 
@@ -536,5 +544,14 @@ bottom-img{
   @media @phone{
     .cell();
     padding:4% 0;
+
+
+    &:hover{    
+      background-color: @h1bg;
+      color: @h1text;
+    }
+  
+  
+
   }
 }
