@@ -137,6 +137,14 @@ bottom-img{
   margin-top: 1%;
   padding: 2%;
   text-align: center;
+
+  p{
+    text-align: left;
+   margin-top: 1%;
+   color: black;
+   font-size: 1.6rem; 
+  }
+
 }
 
 .team-member{
@@ -403,6 +411,55 @@ bottom-img{
 
   @media @phone{
     flex-direction: column;
+  }
+}
+
+.child-main{
+  width: 100%;
+  margin: 1%;
+  padding: 1%;
+  background-color: @grandparentbg;
+  color: black;
+  border-radius: 15px;
+
+  .image-container{
+      width: 100%;
+      background-color: @parentbg;
+      max-width: 100%;
+      margin: 1%;
+      padding: 1%;
+      background-color: @grandparentbg;
+      color: black;
+      border-radius: 5%;
+          
+      @media @phone{
+        .cell();
+      }
+
+      img{
+        text-align: center;
+        max-width: 100%;
+        border-radius: 100%;
+      
+        @media @phone{
+          width: 80%;
+        }
+      }
+  }
+
+  @media @phone{
+    .child-cell();
+  }
+
+  h2, h3{
+    margin:1%;
+    text-align: center;
+  }
+
+  p{
+    margin: 1%;
+    font-size: 2.2rem;
+    line-height: 1.6;
   }
 }
 
