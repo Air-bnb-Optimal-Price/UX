@@ -114,7 +114,7 @@ bottom-img{
 
 .team-box{
   border: 0.5px solid @grandparentbg;
-  border-radius: 5%;
+  border-radius: 15px;
   background-color: @grandparentbg;
   display: flex;
   flex-wrap: wrap;
@@ -184,7 +184,6 @@ bottom-img{
 
     a{
       max-width: 100%;
-      border: 1px solid black;
       overflow-wrap: break-word;
     }
 
@@ -439,7 +438,11 @@ bottom-img{
   }
 
   p{
-    margin: 3%;
+    border-radius: 10px;
+    border: 2px solid @parentbg;
+    width: 78%;
+    margin-bottom: 1%;
+    padding: 1%;
     font-size: 2.2rem;
     font-family: 'Ubuntu','Russo One', sans-serif;
     line-height: 1.4;
@@ -524,7 +527,7 @@ bottom-img{
   width:100%;
   margin: 1%;
   transition-duration: 0.5s;
-  border: 1px solid @h1text;
+  border: 1px solid @h1bg;
 
   &:hover{    
     background-color: @h1bg;
