@@ -1,15 +1,23 @@
 // Navigation code here
 
-nav{
-    width: 100%;
-    border: 1px solid black;
+.nav-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: @parentbg;
+}
+
+nav{
+    width: @parentwidth;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color:@parentbg;
+    //height: 20vh;
     color: #48D1CC;
-    /*
+    /*  
 
     // Inserting simple animation here
 
@@ -31,30 +39,38 @@ nav{
     }
 
     h1{
+        
+        width:95%;
         border: 1px solid black;
-        background-color: lightblue;
-        color: white;
-        width:50%;
+        border-radius: 20px;
+        background-color: @grandparentbg;
+        color:@parentbg;
         text-align: center;
         font-size:3.8rem;
         margin: 1%;
-        padding: 1%;
+        padding: 2%;
         }
     a{
-        width:8%;
+        width: 20%;
+        margin-bottom: 1%;
         text-align: center;
         border: 1px solid black;
-        background-color: lightblue;
-        color: white;
+        border-radius: 20px;
+        background-color: @grandparentbg;
+        color:@parentbg;
         font-family: 'Russo One', sans-serif;
         font-size: 1.6rem;
-        padding:2%;
+        padding:2%; 
     }
 }
 
-
-.header-image{
+header{
     width: 100%;
-    max-width: 100%;
-    height: 85vh;
-  }
+    
+    .header-image{
+     width: 100%;
+     max-width: 100%;
+     height: 70vh;
+    }
+
+}
