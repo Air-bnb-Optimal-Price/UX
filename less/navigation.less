@@ -17,8 +17,17 @@ nav{
     background-color:@parentbg;
     //height: 20vh;
     color: #48D1CC;
-    /*  
 
+    @media @phone{
+        .nav.cell();
+        margin-bottom: 2%;
+    }
+
+    @media @tablet{
+        
+    }
+
+    /*  
     // Inserting simple animation here
 
     @keyframes headerAnim {
@@ -33,11 +42,6 @@ nav{
 
     */
 
-
-    @media @phone{
-        .cell();
-    }
-
     h1{
         
         width:95%;
@@ -49,7 +53,12 @@ nav{
         font-size:3.8rem;
         margin: 1%;
         padding: 2%;
+        
+        @media @phone{
+            .nav.cell();
         }
+    
+    }
     a{
         width: 20%;
         margin-bottom: 1%;
@@ -61,6 +70,12 @@ nav{
         font-family: 'Russo One', sans-serif;
         font-size: 1.6rem;
         padding:2%; 
+    
+    
+        @media @phone{
+            .nav.cell();
+        }
+    
     }
 }
 

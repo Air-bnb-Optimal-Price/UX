@@ -1,5 +1,13 @@
+.child-cell {
+  width: 100%;
+  padding: 1%;
+}
 .cell {
   width: 100%;
+}
+.nav.cell {
+  width: 96%;
+  margin: 1%;
 }
 .flex {
   display: flex;
@@ -455,6 +463,16 @@ bottom-img {
   padding: 1%;
   background-color: oldlace;
 }
+.grandchild-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .grandchild-container {
+    flex-direction: column-reverse;
+  }
+}
 .parent-container {
   display: flex;
   flex-wrap: wrap;
@@ -466,15 +484,31 @@ bottom-img {
   border-radius: 25px;
   background-color: lightslategray;
 }
+.parent-container hr {
+  width: 100%;
+  margin: 2%;
+}
+@media (max-width: 500px) {
+  .parent-container {
+    flex-direction: column;
+  }
+}
 .child-text {
   width: 65%;
   margin: 1%;
   background-color: white;
   border-radius: 15px;
 }
+@media (max-width: 500px) {
+  .child-text {
+    width: 100%;
+    padding: 1%;
+  }
+}
 .child-text h2,
 .child-text h3 {
   margin: 1%;
+  text-align: center;
 }
 .child-text p {
   margin: 1%;
@@ -486,6 +520,11 @@ bottom-img {
   margin: 1%;
   max-width: 100%;
   border-radius: 15px;
+}
+@media (max-width: 500px) {
+  .child-image {
+    width: 100%;
+  }
 }
 .child-image img {
   border-radius: 15px;
@@ -538,7 +577,6 @@ nav {
   background-color: lightslategray;
   color: #48D1CC;
   /*  
-
     // Inserting simple animation here
 
     @keyframes headerAnim {
@@ -555,7 +593,9 @@ nav {
 }
 @media (max-width: 500px) {
   nav {
-    width: 100%;
+    width: 96%;
+    margin: 1%;
+    margin-bottom: 2%;
   }
 }
 nav h1 {
@@ -569,6 +609,12 @@ nav h1 {
   margin: 1%;
   padding: 2%;
 }
+@media (max-width: 500px) {
+  nav h1 {
+    width: 96%;
+    margin: 1%;
+  }
+}
 nav a {
   width: 20%;
   margin-bottom: 1%;
@@ -580,6 +626,12 @@ nav a {
   font-family: 'Russo One', sans-serif;
   font-size: 1.6rem;
   padding: 2%;
+}
+@media (max-width: 500px) {
+  nav a {
+    width: 96%;
+    margin: 1%;
+  }
 }
 header {
   width: 100%;
