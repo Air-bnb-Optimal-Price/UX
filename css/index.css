@@ -652,6 +652,11 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  footer {
+    flex-direction: column;
+  }
+}
 footer a {
   width: 20%;
   background: oldlace;
@@ -664,7 +669,19 @@ footer a {
   margin: 1%;
   padding: 1%;
 }
+@media (max-width: 500px) {
+  footer a {
+    width: 96%;
+    margin: 1%;
+  }
+}
 footer P {
   width: 100%;
+  background: lightslategray;
+  color: oldlace;
   text-align: center;
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.6rem;
+  margin: 1%;
+  padding: 1%;
 }

@@ -4,11 +4,15 @@ footer {
   background: @bgcolor;
   padding: 1%;
   border: 1px double #e0e0e0;
-  border-top: 0.5px dashed darkblue;;
+  border-top: 0.5px dashed darkblue;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  @media @phone{
+    flex-direction: column;
+  }
 
   a{
     width: 20%;
@@ -21,9 +25,22 @@ footer {
     font-size: 1.6rem;
     margin:1%;
     padding:1%;
+
+    @media @phone{
+      .nav.cell();
+    }
+
   }
+ 
   P{
     width: 100%;
     text-align: center;
+    background: @parentbg;
+    color: @grandparentbg;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.6rem;
+    margin:1%;
+    padding:1%;
   }
 }
