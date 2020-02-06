@@ -4,9 +4,8 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
   background-color: @parentbg;
-  border-top: 0.5px dashed darkblue;
+  border-top: 1px solid darkblue;
 }
 
 .footer-container{
@@ -14,7 +13,6 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  border-top: 0.5px dashed darkblue;
   width: @parentwidth;
   color: @textcolor;
   background: @bgcolor;
@@ -28,13 +26,22 @@ footer {
     width: 20%;
     background: @footerbuttoncolor;
     color: @textcolor;
-    border: 0.5px dotted blue;
+    border: 1px solid;
+    border-color: @h1text;
     border-radius: 10px;
     text-align: center;
     font-family: 'Russo One', sans-serif;
     font-size: 1.6rem;
     margin:1%;
     padding:2%;
+
+    transition-duration: 0.7s;
+
+    &:hover{
+      background-color: @h1bg;
+
+      color: @hovertext;
+    }
 
     @media @phone{
       .nav.cell();

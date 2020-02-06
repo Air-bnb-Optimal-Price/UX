@@ -293,8 +293,9 @@ bottom-img{
     }
 
     &:hover{
-      background: darkblue;
-      color: red;
+      background: @h1bg;
+      color: @h1text;
+
     }
   }
 }
@@ -412,6 +413,11 @@ bottom-img{
   @media @phone{
     flex-direction: column;
   }
+
+  a{
+    width: 100%;
+  }
+
 }
 
 .child-main{
@@ -429,7 +435,6 @@ bottom-img{
       margin: 1%;
       padding: 1%;
       background-color: @grandparentbg;
-      color: black;
       border-radius: 5%;
           
       @media @phone{
@@ -510,25 +515,26 @@ bottom-img{
   padding:4%;
   width:100%;
   margin: 1%;
-  border: 1px solid black;
+  transition-duration: 0.5s;
+  border: 1px solid @h1text;
 
-  // Inserting simple animation here
-  @keyframes buttonAnimation {
-    from {background-color: @bgcolor;}
-    to {background-color: white;}
+  &:hover{    
+    background-color: @h1bg;
+    color: @h1text;
   }
 
-  animation-name: buttonAnimation;
-  animation-duration: 10s;
+  // // Inserting simple animation here
+  // @keyframes buttonAnimation {
+  //   from {background-color: @parentbg}
+  //   to {background-color: @grandparentbg;}
+  // }
+
+  // animation-name: buttonAnimation;
+  // animation-duration: 10s;
   // Ending animation
 
   @media @phone{
     .cell();
     padding:4% 0;
-  }
-
-  &:hover{
-    background: darkblue;
-    color: red;
   }
 }
