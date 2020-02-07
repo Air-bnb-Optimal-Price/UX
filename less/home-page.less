@@ -125,6 +125,7 @@ bottom-img{
 
   @media @phone{
     border-radius: 15px;
+    width: 98%;
   }
 
   @media @tablet{
@@ -398,6 +399,7 @@ bottom-img{
 
   @media @phone{
     flex-direction: column-reverse;
+    align-items: center;
   }
 }
 
@@ -413,16 +415,19 @@ bottom-img{
   background-color: @parentbg;
 
   hr{
-    width: 100%;
+    width: 80%;
     margin: 2%;
   }
 
   @media @phone{
     flex-direction: column;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
   }
 
   a{
-    width: 100%;
+    width: 98%;
   }
 }
 
@@ -443,6 +448,12 @@ bottom-img{
   h1, h2, h3{
     margin:1%;
     text-align: center;
+ 
+    @media @phone{
+      margin: 0%;
+      width: 98%;
+      max-width: 98%;
+    }
   }
 
   p{
@@ -450,10 +461,15 @@ bottom-img{
     border: 2px solid @parentbg;
     width: 78%;
     margin-bottom: 1%;
-    padding: 1%;
+    padding: 2%;
     font-size: 2.2rem;
     font-family: 'Ubuntu','Russo One', sans-serif;
     line-height: 1.4;
+
+    @media @phone{
+      width: 96%;
+    }
+
   }
 
   .image-container{
@@ -498,12 +514,14 @@ bottom-img{
   }
 
   h2, h3{
-    margin:1%;
+    width: 98%;
+    padding:1%;
     text-align: center;
   }
 
   p{
-    margin: 1%;
+    width: 98%;
+    padding: 1%;
     font-size: 2.2rem;
     line-height: 1.4;
   }
@@ -516,13 +534,19 @@ bottom-img{
   border-radius: 15px;;
   
   @media @phone{
-    .cell();
-    padding: 1%;
+    width: 98%;
+    margin: 2% 0;
   }
 
   img{
     border-radius: 15px;
     max-width:100%;
+  
+  
+    @media @phone{
+      width: 100%;
+      margin: 0%;
+    }
   }
 }
 
@@ -533,7 +557,7 @@ bottom-img{
   font-size: 4rem;
   padding:4%;
   width:100%;
-  margin: 1%;
+//  margin: 1%;
   transition-duration: 0.5s;
   border: 1px solid @h1bg;
 
